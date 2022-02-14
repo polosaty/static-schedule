@@ -1,0 +1,54 @@
+@media print{
+    @page {
+        size: landscape;
+        margin: 0;  /* this affects the margin in the printer settings */
+    }
+    body
+    {
+        border: solid 1px blue ;
+        margin: 10mm 15mm 10mm 15mm; /* margin you want for the content */
+    }
+
+}
+
+.schedule {
+    /* border: solid black 1px; */
+    width: 100%;
+    padding: 0px;
+    border-spacing: 0px;
+}
+
+.schedule > tbody > tr > td {
+    border: solid black 0.5px;
+    padding: 0px;
+    vertical-align: top;
+}
+.schedule > thead > tr > th {
+    border: solid black 0.5px;
+    padding: 0px;
+}
+
+.schedule > tbody > tr {
+    height: 100px;
+}
+
+table.cell {
+    height: 100%;
+    width: 100%;
+}
+
+table.cell {
+    font-size: small;
+}
+
+table.cell .second-cell {
+    border-left: solid black 0.5px;
+    border-bottom: solid black 0.5px;
+}
+
+table.cell .thrid-cell {
+    border-left: solid black 0.5px;
+}
+table.cell .left-cell {
+    width: 50%;
+}
