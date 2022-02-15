@@ -30,7 +30,7 @@ const render = function () {
     const emptySquare = '&nbsp;&#9634;';
     let day = ru_moment().startOf('week');
     for(let week = 0 ; week < 7 ; week++){
-        week_cells = [];
+        let week_cells = [];
         for(let dow = 0 ; dow < 7 ; dow++){
             week_cells.push(
                 `<span>${day.format('DD MMM')}</span>
